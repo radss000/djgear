@@ -7,13 +7,10 @@
     <meta name="keywords" content="DJ GEAR, sonorisation, éclairage, événementiel, Nice, yachting, L-Acoustics, Meyer Sound">
     <meta name="author" content="DJ GEAR">
     
-    <title>DJ GEAR - Your Event Sounds Better With Us</title>
+ 
     
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +22,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/logo-djgear.png" alt="DJ GEAR Logo">
+                <span style="font-weight: 900; font-size: 1.5rem; letter-spacing: -0.02em;">DJ GEAR</span>
             </div>
             <div class="nav-menu">
                 <ul>
@@ -46,32 +43,28 @@
         </div>
     </nav>
 
-    <!-- Section 1: Hero -->
+    <!-- Section 1: Hero - EXACTEMENT comme la maquette -->
     <section id="hero" class="hero-section">
         <div class="hero-bg-video">
-            <video autoplay muted loop playsinline>
-                <source src="images/hero-bg.mp4" type="video/mp4">
+            <video autoplay muted loop preload="auto" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="images/hero/hero-bg.mp4" type="video/mp4">
             </video>
+            <!-- Fallback image -->
+            <div class="hero-bg-image" style="background-image: url('images/hero/bokeh-lights.png'); position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0.5;"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="line1">YOUR EVENT</span>
-                <span class="line2">SOUNDS</span>
-                <span class="line3">BETTER</span>
-                <span class="line4">WITH US</span>
-            </h1>
+            
         </div>
-        <div class="since-text">SINCE 2015</div>
         <div class="scroll-indicator">
             <span></span>
         </div>
     </section>
 
-    <!-- Section 2: L'expertise événementielle -->
+    <!-- Section 2: L'expertise événementielle - Corrigé avec le bon fichier -->
     <section id="expertise" class="expertise-section">
         <div class="expertise-container">
             <div class="expertise-image">
-                <img src="images/expertise-dj.jpg" alt="DJ Performance">
+                <img src="images/expertise/dj-performance.jpg" alt="DJ Performance">
             </div>
             <div class="expertise-content">
                 <h2>L'EXPERTISE<br>ÉVÉNEMENTIELLE<br>À VOTRE SERVICE</h2>
@@ -80,34 +73,34 @@
         </div>
     </section>
 
-    <!-- Section 3: Services -->
+    <!-- Section 3: Services - Avec les vraies images -->
     <section id="services" class="services-section">
         <h2 class="services-title">SERVICES</h2>
         <div class="services-grid">
             <div class="service-card" data-service="sonorisation">
                 <div class="service-icon">
-                    <img src="images/icon-sonorisation.svg" alt="Sonorisation">
+                    <img src="images/services/sound-mixing.jpg" alt="Sonorisation" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>SONORISATION</h3>
-                <p>AAvec plus de 10 ans d'expérience, DJGEAR met à votre disposition des équipements haut de gamme. Chaque événement véhicule un message. Notre mission : le transmettre avec précision et passion.</p>
+                <p>Avec plus de 10 ans d'expérience, DJGEAR met à votre disposition des équipements haut de gamme. Chaque événement véhicule un message. Notre mission : le transmettre avec précision et passion.</p>
             </div>
             <div class="service-card" data-service="lumiere">
                 <div class="service-icon">
-                    <img src="images/icon-lumiere.svg" alt="Lumière">
+                    <img src="images/services/lighting-control.jpg" alt="Lumière" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>LUMIÈRE</h3>
-                <p>DJGEAR collabore avec les meilleurs techniciens pour offrir des conceptions originales et variées. Ensemble, transformons votre lieu en un espace éclatant qui captivera tous les regards..</p>
+                <p>DJGEAR collabore avec les meilleurs techniciens pour offrir des conceptions originales et variées. Ensemble, transformons votre lieu en un espace éclatant qui captivera tous les regards.</p>
             </div>
             <div class="service-card" data-service="direction">
                 <div class="service-icon">
-                    <img src="images/icon-direction.svg" alt="Direction Technique">
+                    <img src="images/services/stage-production.jpg" alt="Direction Technique" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>DIRECTION TECHNIQUE</h3>
                 <p>DJGEAR prend en main la gestion complète de votre événement : équipe technique, équipements et coordination. De l'idée au jour J, franchissons ce pas ensemble pour créer un événement inoubliable.</p>
             </div>
             <div class="service-card" data-service="yachting">
                 <div class="service-icon">
-                    <img src="images/icon-yachting.svg" alt="Yachting">
+                    <img src="images/services/yacht-event.jpg" alt="Yachting" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <h3>YACHTING</h3>
                 <p>Une équipe dédiée aux événements en mer, disponible 24/7. Experts du yachting, nous séduirons vos invités les plus exigeants.</p>
@@ -115,7 +108,7 @@
         </div>
     </section>
 
-    <!-- Section 4: Nos compétences pour votre projet -->
+    <!-- Section 4: Nos compétences - Avec les vraies images -->
     <section id="competences" class="competences-section">
         <div class="competences-header">
             <h2>NOS COMPÉTENCES POUR<br>VOTRE PROJET</h2>
@@ -125,21 +118,21 @@
         <div class="competences-grid">
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="images/competence-1.jpg" alt="S'adapter & Créer">
+                    <img src="images/competences/creative-setup.jpg" alt="S'adapter & Créer">
                 </div>
                 <h3>S'ADAPTER & CRÉER</h3>
                 <p>En étroite collaboration avec vous, nous concevons des ambiances qui suscitent l'imagination et l'émerveillement.</p>
             </div>
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="images/competence-2.jpg" alt="Mise en scène">
+                    <img src="images/competences/exceptional-staging.jpg" alt="Mise en scène">
                 </div>
                 <h3>MISE EN SCÈNE EXCEPTIONNELLE</h3>
                 <p>Nous adaptons tous les aspects de votre story telling. Chaque détail est étudié pour garantir une parfaite synchronisation avec vos objectifs et vos valeurs.</p>
             </div>
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="images/competence-3.jpg" alt="Personnalisation">
+                    <img src="images/competences/custom-mapping.jpg" alt="Personnalisation">
                 </div>
                 <h3>PERSONNALISER VOTRE ÉVÉNEMENT À L'INFINI</h3>
                 <p>Nous sommes fiers d'avoir en nous l'ADN artistique. Ajoutez une dimension immersive et interactive à vos événements avec le mapping ou le show laser créés sur-mesure.</p>
@@ -147,7 +140,7 @@
         </div>
     </section>
 
-    <!-- Section 5: Notre vision et savoir-faire -->
+    <!-- Section 5: Notre vision et savoir-faire - Avec les vraies images -->
     <section id="vision" class="vision-section">
         <div class="vision-header">
             <h2>NOTRE VISION ET SAVOIR-FAIRE</h2>
@@ -157,21 +150,21 @@
         <div class="vision-content">
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="images/vision-equipment.jpg" alt="Équipement">
+                    <img src="images/vision/outdoor-stage.jpg" alt="Équipement">
                 </div>
                 <h3>UN ÉQUIPEMENT HAUT DE GAMME</h3>
                 <p>Notre parc de matériel, situé en plein coeur de Nice, propose un large choix d'équipement de sonorisation et d'éclairage de dernière génération.</p>
             </div>
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="images/vision-collaboration.jpg" alt="Collaboration">
+                    <img src="images/vision/fire-show.jpg" alt="Collaboration">
                 </div>
                 <h3>UNE COLLABORATION UNIQUE</h3>
                 <p>Nous sommes bien plus qu'un fournisseur de solutions techniques, nous sommes votre partenaire qui vous accompagne tout au long de la vie de votre projet.</p>
             </div>
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="images/vision-detail.jpg" alt="Détail">
+                    <img src="images/vision/elegant-dinner.jpg" alt="Détail">
                 </div>
                 <h3>LE SENS DU DÉTAIL</h3>
                 <p>Chaque lieu, chaque audience, chaque événement a sa spécificité. Nos équipements haut de gamme permettent de produire un rendu à la hauteur de vos attentes.</p>
@@ -179,7 +172,7 @@
         </div>
     </section>
 
-    <!-- Section 6: Réussir avec vous -->
+    <!-- Section 6: Réussir avec vous - Avec les vrais logos -->
     <section id="reussir" class="reussir-section">
         <div class="reussir-header">
             <h2>RÉUSSIR<br>AVEC VOUS</h2>
@@ -188,62 +181,88 @@
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="images/logo-panda-events.png" alt="PANDA EVENTS">
+                    <img src="images/testimonials/panda-events-logo.png" alt="PANDA EVENTS">
                 </div>
                 <p>"Depuis de nombreuses années, DJ GEAR joue un rôle fondamental dans la production technique de nos événements qu'il s'agisse de concerts en salle, de festivals en plein air ou de spectacles privés"</p>
                 <div class="testimonial-author">Tiffenn Lannou - Directrice de PANDA EVENTS</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="images/logo-apa.png" alt="APA">
+                    <img src="images/testimonials/apa-logo.png" alt="APA">
                 </div>
                 <p>"We have been working with DJ GEAR on our event for the Cannes Lions in 2023 and 2024 - we would never work with anyone else as they are so reliable, helpful and always go the extra mile to get the event to work. Could not recommend more!"</p>
                 <div class="testimonial-author">Georgia Loosely - Chef de Projet APA</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="images/logo-lastation.png" alt="La Station">
+                    <img src="images/testimonials/la-station-logo.png" alt="La Station">
                 </div>
                 <p>"Plus que des prestataires : Fred et Laura sont de véritables partenaires de nos événements ! Rigueur, accompagnement, disponibilité et plaisir de partager des événements réussis. The BEST !"</p>
-                <div class="testimonial-author">Nicolas Vaquier Président de la Station</div>
+                <div class="testimonial-author">Nicolas Vaquier - Président de la Station</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="images/logo-gf.png" alt="GF Entertainment">
+                    <img src="images/testimonials/gf-entertainment-logo.png" alt="GF Entertainment">
                 </div>
                 <p>"You were one of our highlights for this year ! Thank you for the great service"</p>
-                <div class="testimonial-author">Emmanuel Akintunde - CEO OF Entertainment</div>
+                <div class="testimonial-author">Emmanuel Akintunde - CEO GF Entertainment</div>
             </div>
         </div>
     </section>
 
-    <!-- Section 7: Nos réalisations -->
+    <!-- Section 7: Nos réalisations - Avec les vraies images -->
     <section id="realisations" class="realisations-section">
         <h2 class="realisations-title">NOS RÉALISATIONS</h2>
         <div class="realisations-gallery">
             <div class="realisation-card" data-category="concert">
-                <img src="images/realisation-1.jpg" alt="Réalisation 1">
+                <img src="images/realisations/outdoor-festival.jpg" alt="Festival Outdoor">
                 <div class="realisation-overlay">
-                    <h3>Concert Festival</h3>
+                    <h3>Festival en Plein Air</h3>
                 </div>
             </div>
             <div class="realisation-card" data-category="corporate">
-                <img src="images/realisation-2.jpg" alt="Réalisation 2">
+                <img src="images/realisations/elegant-venue.jpg" alt="Événement Corporate">
                 <div class="realisation-overlay">
                     <h3>Événement Corporate</h3>
                 </div>
             </div>
             <div class="realisation-card" data-category="yacht">
-                <img src="images/realisation-3.jpg" alt="Réalisation 3">
+                <img src="images/realisations/yacht-party.jpg" alt="Yacht Party">
                 <div class="realisation-overlay">
                     <h3>Yacht Party</h3>
                 </div>
             </div>
-            <!-- Ajoutez plus de réalisations ici -->
+            <div class="realisation-card" data-category="mapping">
+                <img src="images/realisations/projection-mapping.jpg" alt="Projection Mapping">
+                <div class="realisation-overlay">
+                    <h3>Projection Mapping</h3>
+                </div>
+            </div>
+            <div class="realisation-card" data-category="effects">
+                <img src="images/realisations/fire-effects.jpg" alt="Effets Pyrotechniques">
+                <div class="realisation-overlay">
+                    <h3>Effets Spéciaux</h3>
+                </div>
+            </div>
+            <div class="realisation-card" data-category="immersive">
+                <img src="images/realisations/immersive-space.jpg" alt="Espace Immersif">
+                <div class="realisation-overlay">
+                    <h3>Espace Immersif</h3>
+                </div>
+            </div>
+            <div class="realisation-card video-card">
+                <video muted loop preload="none" style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="images/contact/event-video.mp4" type="video/mp4">
+                </video>
+                <div class="realisation-overlay">
+                    <h3>Événement Spécial</h3>
+                    <span class="play-icon">▶</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section 8: FAQs -->
+    <!-- Section 8: FAQs - EXACTEMENT comme dans la maquette -->
     <section id="faqs" class="faqs-section">
         <h2 class="faqs-title">FAQS</h2>
         <div class="faqs-container">
@@ -253,14 +272,58 @@
                     <span class="faq-toggle">+</span>
                 </div>
                 <div class="faq-answer">
-                    DJ GEAR est votre partenaire incontournable pour la location de son et lumière haut de gamme, spécialisé dans l'événementiel, le yachting et le luxe. Avec une expertise éprouvée et une présence de Marseille à Porto Cervo.
+                    <p>DJ GEAR est votre partenaire incontournable pour la location de son et lumière haut de gamme, spécialisé dans l'événementiel, le yachting et le luxe. Avec une expertise éprouvée et une présence de Marseille à Porto Cervo.</p>
                 </div>
             </div>
-            <!-- Ajoutez les autres FAQs ici -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>QUELS SERVICES DJ GEAR PROPOSE-T-IL EN MATIÈRE DE RÉGIE DJ ?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>DJ GEAR met à votre disposition des régies DJ de qualité professionnelle, avec des platines Pioneer, Technics et des contrôleurs Model One. Nos équipements sont conçus pour offrir une performance optimale et s'adapter à tous types d'événements, des soirées privées aux grands festivals.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>QUELS SONT LES AVANTAGES DE LA SONORISATION L-ACOUSTICS ET MEYER SOUND ?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ces systèmes de sonorisation offrent une qualité sonore inégalée, idéale pour des événements haut de gamme. Ces marques sont réputées pour leur précision et leur puissance, assurant une expérience immersive pour vos invités, qu'il s'agisse de concerts, de festivals ou de soirées privées.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>QUEL EST LE DÉLAI POUR UN DEVIS ?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chez DJ GEAR, nous travaillons pour que les délais de réponse soient très courts. Vous pouvez nous contacter par téléphone ou par e-mail pour obtenir un devis personnalisé rapidement.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>QUELLES RÉFÉRENCES SONT DISPONIBLES ?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>DJ GEAR propose des équipements de sonorisation et d'éclairage haut de gamme, incluant des marques de renom telles que L-Acoustics, Meyer Sound, Pioneer DJ, Technics et Allen&Heath.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>EST-CE QUE DJ GEAR FOURNIT DES ÉQUIPEMENTS POUR DES ÉVÉNEMENTS SUR YACHTS ?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, DJ GEAR est un expert de l'éclairage et de la sonorisation pour yachts. Nous proposons des solutions sur-mesure qui s'alignent au standard des yachts avec des équipements haut de gamme adaptés à l'espace et à l'ambiance maritime.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section 9: Contact -->
+    <!-- Section 9: Contact - EXACTEMENT comme dans la maquette -->
     <section id="contact" class="contact-section">
         <div class="contact-content">
             <h2 class="contact-title">
@@ -278,12 +341,8 @@
                     <a href="mailto:djge4r@gmail.com">djge4r@gmail.com</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <img src="images/icon-facebook.svg" alt="Facebook">
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <img src="images/icon-instagram.svg" alt="Instagram">
-                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
                 </div>
             </div>
         </div>
