@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DJ GEAR - Location de matériel son et lumière haut de gamme pour événements, yachting et luxe. Expertise événementielle depuis 2015.">
-    <title>DJ GEAR - Your Event Sounds Better With Us</title>
+
     
     <style>
         /* Reset & Base */
@@ -336,10 +336,10 @@
         }
 
         .service-icon img {
-            width: 60%;
-            height: 60%;
-            object-fit: contain;
-            filter: brightness(0) invert(1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .service-card h3 {
@@ -551,10 +551,9 @@
         }
 
         .testimonial-logo img {
-            width: 80%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
-            filter: brightness(0) invert(1);
         }
 
         .testimonial-card p {
@@ -930,18 +929,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-bg-video">
-            <!-- Utilise une image de placeholder avec effet bokeh -->
-            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1920&h=1080&fit=crop" alt="Event Lights">
+            <video autoplay muted loop preload="auto" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                <source src="images/hero/hero-bg.mp4" type="video/mp4">
+            </video>
+            <!-- Fallback image -->
+            <img src="images/hero/bokeh-lights.png" alt="Event Lights">
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="line1">YOUR EVENT</span>
-                <span class="line2">SOUNDS</span>
-                <span class="line3">BETTER</span>
-                <span class="line4">WITH US</span>
-            </h1>
-        </div>
-        <div class="since-text">SINCE 2015</div>
+
         <div class="scroll-indicator">
             <span></span>
         </div>
@@ -951,7 +945,7 @@
     <section id="expertise" class="expertise-section">
         <div class="expertise-container">
             <div class="expertise-image">
-                <img src="https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=800&h=600&fit=crop" alt="DJ Performance">
+                <img src="images/expertise/PAGE 2.png" alt="DJ Performance">
             </div>
             <div class="expertise-content">
                 <h2>L'EXPERTISE<br>ÉVÉNEMENTIELLE<br>À VOTRE SERVICE</h2>
@@ -966,28 +960,28 @@
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039367.png" alt="Sonorisation">
+                    <img src="images/services/service-1.png" alt="Sonorisation">
                 </div>
                 <h3>SONORISATION</h3>
                 <p>Avec plus de 10 ans d'expérience, DJGEAR met à votre disposition des équipements haut de gamme. Chaque événement véhicule un message. Notre mission : le transmettre avec précision et passion.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039399.png" alt="Lumière">
+                    <img src="images/services/PAGE 3 - BULLE 2.png" alt="Lumière">
                 </div>
                 <h3>LUMIÈRE</h3>
                 <p>DJGEAR collabore avec les meilleurs techniciens pour offrir des conceptions originales et variées. Ensemble, transformons votre lieu en un espace éclatant qui captivera tous les regards.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039386.png" alt="Direction Technique">
+                    <img src="images/services/PAGE 3 - BULLE 3.png" alt="Direction Technique">
                 </div>
                 <h3>DIRECTION TECHNIQUE</h3>
                 <p>DJGEAR prend en main la gestion complète de votre événement : équipe technique, équipements et coordination. De l'idée au jour J, franchissons ce pas ensemble pour créer un événement inoubliable.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3039/3039404.png" alt="Yachting">
+                    <img src="images/services/PAGE 3 - BULLE 4 .png" alt="Yachting">
                 </div>
                 <h3>YACHTING</h3>
                 <p>Une équipe dédiée aux événements en mer, disponible 24/7. Experts du yachting, nous séduirons vos invités les plus exigeants.</p>
@@ -1005,21 +999,21 @@
         <div class="competences-grid">
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=400&fit=crop" alt="S'adapter & Créer">
+                    <img src="images/competences/PAGE 4 - PARRA1.png" alt="S'adapter & Créer">
                 </div>
                 <h3>S'ADAPTER & CRÉER</h3>
                 <p>En étroite collaboration avec vous, nous concevons des ambiances qui suscitent l'imagination et l'émerveillement.</p>
             </div>
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&h=400&fit=crop" alt="Mise en scène">
+                    <img src="images/competences/PAGE 4 - PARRA2.png" alt="Mise en scène">
                 </div>
                 <h3>MISE EN SCÈNE EXCEPTIONNELLE</h3>
                 <p>Nous adaptons tous les aspects de votre story telling. Chaque détail est étudié pour garantir une parfaite synchronisation avec vos objectifs et vos valeurs.</p>
             </div>
             <div class="competence-card">
                 <div class="competence-image">
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=400&fit=crop" alt="Personnalisation">
+                    <img src="images/competences/PAGE 4 PARRA3.png" alt="Personnalisation">
                 </div>
                 <h3>PERSONNALISER VOTRE ÉVÉNEMENT À L'INFINI</h3>
                 <p>Nous sommes fiers d'avoir en nous l'ADN artistique. Ajoutez une dimension immersive et interactive à vos événements avec le mapping ou le show laser créés sur-mesure.</p>
@@ -1037,21 +1031,21 @@
         <div class="vision-content">
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&h=400&fit=crop" alt="Équipement">
+                    <img src="images/vision/PAGE 5 - REC1.png" alt="Équipement">
                 </div>
                 <h3>UN ÉQUIPEMENT HAUT DE GAMME</h3>
                 <p>Notre parc de matériel, situé en plein coeur de Nice, propose un large choix d'équipement de sonorisation et d'éclairage de dernière génération.</p>
             </div>
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&h=400&fit=crop" alt="Collaboration">
+                    <img src="images/vision/PAGE 5 - REC 2.png" alt="Collaboration">
                 </div>
                 <h3>UNE COLLABORATION UNIQUE</h3>
                 <p>Nous sommes bien plus qu'un fournisseur de solutions techniques, nous sommes votre partenaire qui vous accompagne tout au long de la vie de votre projet.</p>
             </div>
             <div class="vision-block">
                 <div class="vision-image-block">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Détail">
+                    <img src="images/vision/PAGE 5 - REC 3.png" alt="Détail">
                 </div>
                 <h3>LE SENS DU DÉTAIL</h3>
                 <p>Chaque lieu, chaque audience, chaque événement a sa spécificité. Nos équipements haut de gamme permettent de produire un rendu à la hauteur de vos attentes.</p>
@@ -1068,28 +1062,28 @@
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="https://via.placeholder.com/150/000/fff?text=PANDA" alt="PANDA EVENTS">
+                    <img src="images/testimonials/PAGE 6 - LOGO 1.png" alt="PANDA EVENTS">
                 </div>
                 <p>"Depuis de nombreuses années, DJ GEAR joue un rôle fondamental dans la production technique de nos événements qu'il s'agisse de concerts en salle, de festivals en plein air ou de spectacles privés"</p>
                 <div class="testimonial-author">Tiffenn Lannou - Directrice de PANDA EVENTS</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="https://via.placeholder.com/150/000/fff?text=APA" alt="APA">
+                    <img src="images/testimonials/PAGE 6 - LOGO 2.png" alt="APA">
                 </div>
                 <p>"We have been working with DJ GEAR on our event for the Cannes Lions in 2023 and 2024 - we would never work with anyone else as they are so reliable, helpful and always go the extra mile to get the event to work. Could not recommend more!"</p>
                 <div class="testimonial-author">Georgia Loosely - Chef de Projet APA</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="https://via.placeholder.com/150/000/fff?text=Station" alt="La Station">
+                    <img src="images/testimonials/PAGE 6- LOGO 3.png" alt="La Station">
                 </div>
                 <p>"Plus que des prestataires : Fred et Laura sont de véritables partenaires de nos événements ! Rigueur, accompagnement, disponibilité et plaisir de partager des événements réussis. The BEST !"</p>
                 <div class="testimonial-author">Nicolas Vaquier Président de la Station</div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-logo">
-                    <img src="https://via.placeholder.com/150/000/fff?text=GF" alt="GF Entertainment">
+                    <img src="images/testimonials/PAGE 6 - LOGO 4.png" alt="GF Entertainment">
                 </div>
                 <p>"You were one of our highlights for this year ! Thank you for the great service"</p>
                 <div class="testimonial-author">Emmanuel Akintunde - CEO OF Entertainment</div>
@@ -1102,39 +1096,48 @@
         <h2 class="realisations-title">NOS RÉALISATIONS</h2>
         <div class="realisations-gallery">
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=600&fit=crop" alt="Concert Festival">
+                <img src="images/realisations/outdoor-festival.jpg" alt="Festival Outdoor">
                 <div class="realisation-overlay">
-                    <h3>Concert Festival</h3>
+                    <h3>Festival en Plein Air</h3>
                 </div>
             </div>
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop" alt="Événement Corporate">
+                <img src="images/realisations/elegant-venue.jpg" alt="Événement Corporate">
                 <div class="realisation-overlay">
                     <h3>Événement Corporate</h3>
                 </div>
             </div>
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop" alt="Yacht Party">
+                <img src="images/realisations/yacht-party.jpg" alt="Yacht Party">
                 <div class="realisation-overlay">
                     <h3>Yacht Party</h3>
                 </div>
             </div>
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop" alt="Festival Outdoor">
+                <img src="images/realisations/immersive-space.jpg" alt="Espace Immersif">
                 <div class="realisation-overlay">
-                    <h3>Festival Outdoor</h3>
+                    <h3>Espace Immersif</h3>
                 </div>
             </div>
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800&h=600&fit=crop" alt="Projection Mapping">
+                <img src="images/realisations/projection-mapping.jpg" alt="Projection Mapping">
                 <div class="realisation-overlay">
                     <h3>Projection Mapping</h3>
                 </div>
             </div>
             <div class="realisation-card">
-                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop" alt="Fire Effects Show">
+                <img src="images/realisations/fire-effects.jpg" alt="Effets Pyrotechniques">
                 <div class="realisation-overlay">
-                    <h3>Fire Effects Show</h3>
+                    <h3>Effets Spéciaux</h3>
+                </div>
+            </div>
+            <div class="realisation-card video-card">
+                <video muted loop preload="none" style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="images/contact/event-video.mp4" type="video/mp4">
+                </video>
+                <div class="realisation-overlay">
+                    <h3>Événement Spécial</h3>
+                    <span class="play-icon">▶</span>
                 </div>
             </div>
         </div>
