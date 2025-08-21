@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DJ GEAR - Location de matériel son et lumière haut de gamme pour événements, yachting et luxe. Expertise événementielle depuis 2015.">
-
+   
     
     <style>
         /* Reset & Base */
@@ -75,6 +75,11 @@
             font-size: 1.5rem;
             font-weight: 900;
             letter-spacing: 0.05em;
+        }
+
+        .nav-logo img {
+            height: 40px;
+            width: auto;
         }
 
         .nav-menu ul {
@@ -259,6 +264,7 @@
             border-radius: 20px;
             overflow: hidden;
             background: linear-gradient(135deg, #1e3a8a 0%, #000 100%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
         }
 
         .expertise-image img {
@@ -288,6 +294,10 @@
             min-height: 100vh;
             padding: 100px 40px;
             background: #000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .services-title {
@@ -305,55 +315,58 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 50px;
+            align-items: start;
         }
 
         .service-card {
             text-align: center;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 20px;
+            padding: 20px;
             transition: all 0.3s ease;
-            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.05);
         }
 
         .service-icon {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 30px;
-            background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
-            border-radius: 50%;
+            width: 560px;
+            height: 560px;
+            margin: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
+            flex-shrink: 0;
         }
 
         .service-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+            width: 560px;
+            height: 560px;
+            object-fit: contain;
+            object-position: center;
         }
 
         .service-card h3 {
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin: -10px 0 10px 0;
             text-transform: uppercase;
             font-weight: 700;
             font-style: italic;
+            line-height: 0.;
+            width: 100%;
         }
 
         .service-card p {
             font-size: 1rem;
             line-height: 1.6;
             opacity: 0.8;
+            max-width: 320px;
+            margin: 0;
+            text-align: center;
         }
 
         /* Competences Section */
@@ -361,6 +374,7 @@
             min-height: 100vh;
             padding: 100px 40px;
             background: #0a0a0a;
+            text-align: center;
         }
 
         .competences-header {
@@ -388,21 +402,22 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 60px;
         }
 
         .competence-card {
             position: relative;
+            text-align: center;
         }
 
         .competence-image {
             width: 100%;
             height: 300px;
-            background: linear-gradient(135deg, #312e81 0%, #000 100%);
             border-radius: 15px;
             margin-bottom: 30px;
             overflow: hidden;
+            position: relative;
         }
 
         .competence-image img {
@@ -427,6 +442,8 @@
             font-size: 1rem;
             line-height: 1.6;
             opacity: 0.8;
+            max-width: 350px;
+            margin: 0 auto;
         }
 
         /* Vision Section */
@@ -434,6 +451,7 @@
             min-height: 100vh;
             padding: 100px 40px;
             background: #000;
+            text-align: center;
         }
 
         .vision-header {
@@ -461,8 +479,12 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 60px;
+        }
+
+        .vision-block {
+            text-align: center;
         }
 
         .vision-block h3 {
@@ -476,11 +498,12 @@
             font-size: 1rem;
             line-height: 1.8;
             opacity: 0.8;
+            max-width: 350px;
+            margin: 0 auto;
         }
 
         .vision-image-block {
-            height: 400px;
-            background: linear-gradient(135deg, #1e3a8a 0%, #000 100%);
+            height: 300px;
             border-radius: 15px;
             margin-bottom: 30px;
             overflow: hidden;
@@ -571,9 +594,13 @@
 
         /* Realisations Section */
         .realisations-section {
-            min-height: 100vh;
+            min-height: 40vh;
             padding: 100px 40px;
             background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .realisations-title {
@@ -607,14 +634,16 @@
             transform: scale(1.05);
         }
 
-        .realisation-card img {
+        .realisation-card img,
+        .realisation-card video {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
 
-        .realisation-card:hover img {
+        .realisation-card:hover img,
+        .realisation-card:hover video {
             transform: scale(1.1);
         }
 
@@ -712,6 +741,23 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            overflow: hidden;
+        }
+
+        .contact-bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .contact-bg-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
         }
 
         .contact-content {
@@ -776,7 +822,14 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
         }
 
         .social-link:hover {
@@ -905,7 +958,9 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">DJ GEAR</div>
+            <div class="nav-logo">
+                <img src="images/logo/logo-dj-gear-nav-1.png" alt="DJ GEAR">
+            </div>
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="#hero">Accueil</a></li>
@@ -935,6 +990,9 @@
             <!-- Fallback image -->
             <img src="images/hero/bokeh-lights.png" alt="Event Lights">
         </div>
+        
+
+        <div class="since-text">SINCE 2015</div>
 
         <div class="scroll-indicator">
             <span></span>
@@ -1086,7 +1144,7 @@
                     <img src="images/testimonials/PAGE_6_-_LOGO_4-removebg-preview.png" alt="GF Entertainment">
                 </div>
                 <p>"You were one of our highlights for this year ! Thank you for the great service"</p>
-                <div class="testimonial-author">Emmanuel Akintunde - CEO OF Entertainment</div>
+                <div class="testimonial-author">Emmanuel Akintunde - CEO GF Entertainment</div>
             </div>
         </div>
     </section>
@@ -1094,53 +1152,7 @@
     <!-- Réalisations Section -->
     <section id="realisations" class="realisations-section">
         <h2 class="realisations-title">NOS RÉALISATIONS</h2>
-        <div class="realisations-gallery">
-            <div class="realisation-card">
-                <img src="images/realisations/outdoor-festival.jpg" alt="Festival Outdoor">
-                <div class="realisation-overlay">
-                    <h3>Festival en Plein Air</h3>
-                </div>
-            </div>
-            <div class="realisation-card">
-                <img src="images/realisations/elegant-venue.jpg" alt="Événement Corporate">
-                <div class="realisation-overlay">
-                    <h3>Événement Corporate</h3>
-                </div>
-            </div>
-            <div class="realisation-card">
-                <img src="images/realisations/yacht-party.jpg" alt="Yacht Party">
-                <div class="realisation-overlay">
-                    <h3>Yacht Party</h3>
-                </div>
-            </div>
-            <div class="realisation-card">
-                <img src="images/realisations/immersive-space.jpg" alt="Espace Immersif">
-                <div class="realisation-overlay">
-                    <h3>Espace Immersif</h3>
-                </div>
-            </div>
-            <div class="realisation-card">
-                <img src="images/realisations/projection-mapping.jpg" alt="Projection Mapping">
-                <div class="realisation-overlay">
-                    <h3>Projection Mapping</h3>
-                </div>
-            </div>
-            <div class="realisation-card">
-                <img src="images/realisations/fire-effects.jpg" alt="Effets Pyrotechniques">
-                <div class="realisation-overlay">
-                    <h3>Effets Spéciaux</h3>
-                </div>
-            </div>
-            <div class="realisation-card video-card">
-                <video muted loop preload="none" style="width: 100%; height: 100%; object-fit: cover;">
-                    <source src="images/contact/event-video.mp4" type="video/mp4">
-                </video>
-                <div class="realisation-overlay">
-                    <h3>Événement Spécial</h3>
-                    <span class="play-icon">▶</span>
-                </div>
-            </div>
-        </div>
+        <!-- Section vide - contenu à venir -->
     </section>
 
     <!-- FAQs Section -->
@@ -1206,6 +1218,12 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+        <div class="contact-bg-video">
+            <video autoplay muted loop preload="auto">
+                <source src="images/contact/event-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
         <div class="contact-content">
             <h2 class="contact-title">
                 UNE QUESTION ?<br>
@@ -1222,8 +1240,16 @@
                     <a href="mailto:djge4r@gmail.com">djge4r@gmail.com</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">f</a>
-                    <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                    <a href="https://www.facebook.com/photo/?fbid=107548005513456&set=a.107548042180119&locale=fr_FR" class="social-link" aria-label="Facebook" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/djgear__/" class="social-link" aria-label="Instagram" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1319,7 +1345,7 @@
         }, observerOptions);
         
         // Observe elements
-        const animatedElements = document.querySelectorAll('.service-card, .competence-card, .realisation-card, .testimonial-card, .vision-block');
+        const animatedElements = document.querySelectorAll('.service-card, .competence-card, .testimonial-card, .vision-block');
         animatedElements.forEach(el => {
             el.classList.add('fade-in-up');
             observer.observe(el);
